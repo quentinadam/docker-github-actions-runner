@@ -12,7 +12,7 @@ get_runner_token
 
 cd /actions-runner
 
-RUNNER_ALLOW_RUNASROOT=1 ./config.sh --url https://github.com/${ORGANIZATION} --token ${RUNNER_TOKEN} --unattended
+RUNNER_ALLOW_RUNASROOT=1 ./config.sh --url https://github.com/${ORGANIZATION} --token ${RUNNER_TOKEN} --name ${RUNNER_NAME} --unattended
 
 cleanup() {
   get_runner_token
